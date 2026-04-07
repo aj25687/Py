@@ -6,7 +6,6 @@ MUTATION_RATE = 0.01
 
 population = []
 for _ in range(POPULATION_SIZE):
-    # Randomly assign two alleles: 'A' or 'a'
     gene1 = random.choice(['A', 'a'])
     gene2 = random.choice(['A', 'a'])
     population.append([gene1, gene2])
@@ -17,7 +16,6 @@ for gen in range(GENERATIONS):
     for _ in range(POPULATION_SIZE):
         parent1 = random.choice(population)
         parent2 = random.choice(population)
-        
         child_gene1 = random.choice(parent1)
         child_gene2 = random.choice(parent2)
         
