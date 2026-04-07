@@ -17,8 +17,8 @@ def count_infected_neighbors(current_grid, r, c):
     for dr in [-1, 0, 1]:
         for dc in [-1, 0, 1]:
             if dr == 0 and dc == 0: continue 
-            
-            nr, nc = r + dr, c + dc
+            nr = r + dr
+            nc = c + dc
             if 0 <= nr < ROWS and 0 <= nc < COLS:
                 if 1 <= current_grid[nr][nc] <= RECOVERY_TIME:
                     count += 1
