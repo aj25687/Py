@@ -10,7 +10,7 @@ DAYS_TO_SIMULATE = 200
 
 grid = [[0 for _ in range(COLS)] for _ in range(ROWS)]
 
-grid[ROWS/2][COLS/2] = 1 
+grid[int(ROWS/2)][int(COLS/2)] = 1 
 
 def count_infected_neighbors(current_grid, r, c):
     count = 0
