@@ -6,7 +6,7 @@ ROWS = 30
 COLS = 30
 INFECTION_CHANCE = 0.3  
 RECOVERY_TIME = 4       
-DAYS_TO_SIMULATE = 200  
+DAYS_TO_SIMULATE = 300  
 
 grid = [[0 for _ in range(COLS)] for _ in range(ROWS)]
 
